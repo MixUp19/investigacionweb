@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómputo en la Nube y Servicios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 900px;
+            margin:  auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .navbar {
+            background: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            z-index: 1;
+            width: 100%;
+        }
+        .navbar a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        ul{
+            list-style-type:square;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#conceptos">Conceptos Generales</a>
+        <a href="#tipos">Tipos de Servicios</a>
+        <a href="#patrones">Patrones de Diseño</a>
+        <a href="#estandares">Estándares en Servicios</a>
+        <a href="#plataformas">Plataformas Tecnológicas</a>
+        <a href="#seguridad">Seguridad e Interoperabilidad</a>
+    </div>
+    <div class="container">
+        
+        <h1>Cómputo en la Nube y Servicios</h1>
+        
+        <h2 id="conceptos">5.1 Conceptos Generales</h2>
+        <p>El cómputo en la nube se refiere a la entrega de servicios de computación, como servidores, almacenamiento, bases de datos, redes, software, análisis e inteligencia, a través de Internet ("la nube") para ofrecer una innovación más rápida, recursos flexibles y economías de escala.</p>
+        <h3>Ventajas</h3>
+        <ul>
+            <li><p><strong>Reducir los costos de TI:</strong>la nube le permite descargar algunos o la mayoría de los costos y el esfuerzo de comprar, instalar, configurar y administrar su propia infraestructura local.</p></li>
+            <li><p><strong>Mejorar la agilidad y el tiempo de creación de valor:</strong> con la nube, su organización puede comenzar a utilizar aplicaciones empresariales en cuestión de minutos, en lugar de esperar semanas o meses para que TI responda a una solicitud, compre y configure hardware de soporte e instale software. </p></li>
+            <li><p><strong>Escalar de manera más fácil y rentable:</strong> la nube proporciona elasticidad; en lugar de comprar capacidad excedente que permanece sin usar durante períodos lentos, puede aumentar o reducir la capacidad en respuesta a picos y caídas en el tráfico.</p></li>
+        </ul>
+        
+        <h2 id="tipos">5.2 Tipos de Servicios en la Nube</h2>
+        <p><strong>Infraestructura como Servicio (IaaS):</strong> Proporciona recursos fundamentales de computación como servidores y almacenamiento en la nube.</p>
+        <p>La IaaS permite a los usuarios finales escalar y reducir los recursos según sea necesario, lo que reduce la necesidad de gastos de capital elevados por adelantado o infraestructura "propia" innecesaria, especialmente en el caso de cargas de trabajo "con picos".</p>
+        <p><strong>Plataforma como Servicio (PaaS):</strong> Proporciona una plataforma que permite a los desarrolladores crear, desplegar y gestionar aplicaciones sin preocuparse por la infraestructura subyacente.</p>
+        <p>Al igual que IaaS, PaaS incluye infraestructura (servidores, almacenamiento y redes), pero también middleware, herramientas de desarrollo, servicios de inteligencia empresarial (BI), sistemas de administración de bases de datos, etc. PaaS está diseñado para sustentar el ciclo de vida completo de las aplicaciones web: compilación, pruebas, implementación, administración y actualización.</p>
+        <p><strong>Software como Servicio (SaaS):</strong> Proporciona aplicaciones completas listas para usar que se entregan a través de Internet.</p>
+        <p>Si has utilizado un servicio de correo electrónico basado en Web, como Outlook, Hotmail o Yahoo! Mail, entonces ya has usado una forma de SaaS. Con estos servicios, inicias sesión en tu cuenta a través de Internet, a menudo desde un explorador web. El software de correo electrónico se encuentra en la red del proveedor de servicios, donde también se almacenan los mensajes. Puedes acceder a tu correo electrónico y a los mensajes almacenados desde un explorador web en cualquier equipo o dispositivo conectado a Internet.</p>
+        
+        <h2 id="patrones">5.3 Patrones de Diseño</h2>
+        <p>Los patrones de diseño en la nube, como el monitoreo de estado, balanceo de carga y estrangulación, son esenciales para garantizar la disponibilidad y rendimiento de las aplicaciones. Estos patrones ayudan a manejar la carga, evitar cuellos de botella y mantener los servicios funcionando eficientemente.</p>
+        <h3>Ejemplos:</h3>
+        <ul>
+            <li>
+                <h4>Anti-corruption layer</h4>
+                <p>Este patrón ayuda a garantizar que el nuevo diseño de componentes permanezca influido por implementaciones heredadas que podrían tener diferentes modelos de datos o reglas de negocio al integrar con estos sistemas heredados. </p>
+            </li>
+            <li>
+                <h4>Organización</h4>
+                <p>Coordina el comportamiento de los componentes distribuidos autónomos en una carga de trabajo mediante la comunicación descentralizada controlada por eventos.</p>
+            </li>
+            <li>
+                <h4>Sellos de implementación</h4>
+                <p>Proporciona un enfoque para publicar una versión específica de una aplicación y su infraestructura como una unidad controlada de implementación, en función de la suposición de que las mismas o diferentes versiones se implementarán simultáneamente.</p>
+            </li>
+        </ul>
+
+        <h2 id="estandares">5.4 Estándares en Servicios</h2>
+        <p>Los estándares en servicios en la nube incluyen protocolos como TCP, IP, SNMP y HTTP. También incluyen normas de calidad y seguridad como ISO 9000 e ISO 27000, que aseguran procedimientos adecuados en la gestión de servicios en la nube.</p>
+
+        <p>
+            Los estándares aseguran interoperabilidad, seguridad y eficiencia. Algunos estándares relevantes incluyen:<br>
+            <strong>ISO/IEC 27017:</strong> Control de seguridad en servicios en la nube.<br>
+            <strong>ISO/IEC 27018:</strong> Protección de datos personales en la nube pública.<br>
+            <strong>NIST SP 800-145:</strong> Definiciones de la computación en la nube.
+          </p>
+
+        <h2 id="plataformas">5.5 Plataformas Tecnológicas</h2>
+        <p>Ejemplos de plataformas tecnológicas incluyen Amazon EC2, Microsoft Azure, Google App Engine y Red Hat OpenShift, que ofrecen diversas capacidades y servicios en la nube para diferentes necesidades empresariales.</p>
+
+        <ul>
+            <li>
+                <h4>Azure</h4>
+                <p>EMicrosoft Azure es una plataforma de computación en la nube creado por Microsoft para construir, probar, desplegar y administrar aplicaciones y servicios mediante el uso de sus centros de datos. Proporciona software como servicio, plataforma como servicio e infraestructura como servicio y es compatible con muchos lenguajes, herramientas y marcos de programación diferentes, incluidos software y sistemas específicos de Microsoft y de terceros.</p>
+            </li>
+            <li>
+                <h4>Amazon EC2</h4>
+                <p>Amazon Elastic Compute Cloud (Amazon EC2) proporciona capacidad de computación escalable bajo demanda en la nube de Amazon Web Services (AWS). El uso de Amazon EC2 reduce los costos de hardware para que pueda desarrollar e implementar aplicaciones con mayor rapidez. Puede usar Amazon EC2 para lanzar tantos servidores virtuales como necesite, configurar la seguridad y las redes, y administrar el almacenamiento. Puede agregar capacidad (escalar verticalmente) para gestionar tareas que requieren mucha computación, como los procesos mensuales o anuales, o los picos de tráfico del sitio web. Cuando el uso disminuye, puede volver a reducir la capacidad (reducir verticalmente).</p>
+            </li>
+            <li>
+                <h4>Red Hat OpenShift</h4>
+                <p>Red Hat OpenShift es la plataforma de aplicaciones de nube híbrida impulsada por Kubernetes líder del sector que combina servicios probados y confiables para reducir los problemas a la hora de desarrollar, modernizar, implementar, ejecutar y gestionar las aplicaciones. OpenShift ofrece una experiencia uniforme en toda la arquitectura local, del extremo de la red y de la nube pública e híbrida.</p>
+            </li>
+        </ul>
+
+        <h2 id="seguridad">5.6 Seguridad e Interoperabilidad</h2>
+        <p>La seguridad en la nube abarca políticas, tecnologías y controles para proteger datos, aplicaciones e infraestructura. La interoperabilidad asegura que los diferentes servicios y aplicaciones puedan trabajar juntos de manera efectiva, facilitando la integración y migración entre diferentes proveedores y servicios en la nube.</p>
+        <p>
+            <ul>
+                <li><strong>IAM (Gestión de Identidades y Accesos):</strong> Control de acceso a recursos en la nube.</li>
+                <li><strong>Gobernanza:</strong> Políticas para prevención, detección y mitigación de amenazas.</li>
+                <li><strong>Planes de Recuperación y Continuidad:</strong> Estrategias para recuperar datos y mantener operaciones ante fallos.</li>
+                <li><strong>Cifrado:</strong> Codificación de datos para proteger la información sensible.</li>
+            </ul>
+        </p>
+    </div>
+</body>
+</html>
